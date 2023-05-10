@@ -1,0 +1,13 @@
+version: '3'
+services:
+  a:
+    build: ./A
+    networks:
+      - mon-reseau
+  b:
+    build: ./B
+    networks:
+      - mon-reseau
+
+networks:
+  mon-reseau:
